@@ -10,7 +10,7 @@ void mm(double *result, double *a, double *b, int dim_size) {
     for (x = 0; x < dim_size; ++x) {
       double r = 0.0;
       for (k = 0; k < dim_size; ++k) {
-	r += a[y * dim_size + k] *  b[k * dim_size + x];
+        r += a[y * dim_size + k] *  b[k * dim_size + x];
       }
       result[y * dim_size + x] = r;
     }
@@ -28,7 +28,7 @@ void print_matrix(double *result, int dim_size) {
   printf("\n");
 }
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
   double **r;
   double **result;
   int i;
